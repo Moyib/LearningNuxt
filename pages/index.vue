@@ -6,7 +6,7 @@
         musicapp
       </h1>
       <h2 class="subtitle">
-        shows bad jokes
+        shows music stars and their songs
       </h2>
       <div class="links">
         <a
