@@ -1,7 +1,9 @@
 <template>
   <div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">Bop-Bop</a>
+      <nuxt-link class="navbar-brand" to="/">
+        Bop Bop
+      </nuxt-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -16,29 +18,21 @@
 
       <div id="navbarColor01" class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <nuxt-link class="nav-link" to="/">
-              Home
-            </nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link class="nav-link" to="/songs">
-              Music
-            </nuxt-link>
-          </li>
           <li class="nav-item">
             <nuxt-link class="nav-link" to="/about">
               About
             </nuxt-link>
           </li>
-          <li class="nav-item">
-            <nuxt-link class="nav-link" to="/artistes">
-              Artistes
-            </nuxt-link>
-          </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" @submit.prevent="submit">
-          <input v-model="search" class="form-control mr-sm-2" type="text" placeholder="Find your fav songs" autofocus>
+          <input
+            v-model="search"
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Find your fav songs here"
+            width="300px"
+            autofocus
+          >
           <button class="btn btn-secondary my-2 my-sm-0" type="submit">
             Search
           </button>
@@ -79,5 +73,8 @@ svg {
     border-radius: 1.5rem;
     background-color: whitesmoke;
     opacity: 0.5;
+}
+input {
+  width: 300px;
 }
 </style>
