@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>About itunes music</h1>
-    <p>This is an app that displays songs</p>
+    <h4>All your favourite songs from your favourite artistes in one place</h4>
   </div>
 </template>
 
@@ -9,7 +8,7 @@
 export default {
   head () {
     return {
-      title: 'About Us',
+      title: 'Your favourite artistes',
       meta: [
         {
           hid: 'description',
