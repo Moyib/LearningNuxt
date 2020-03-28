@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>About itunes music</h1>
+    <h1>About BopBop music</h1>
     <p>This is an app that displays your favourite songs.</p>
     <p>Just type in your favourite artiste's name and go!</p>
   </div>
