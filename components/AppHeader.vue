@@ -58,6 +58,11 @@
 <script>
 export default {
   name: 'Appheader',
+  data () {
+    return {
+      search: ''
+    }
+  },
   methods: {
     submit (event) {
       this.$router.push(`songs/${this.search}`)

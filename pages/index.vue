@@ -17,7 +17,7 @@
     <h6>Here, you'll find your favourite songs</h6>
     <div class="row">
       <div v-for="(data, index) in singers" :key="index" class="col-md-4 col-lg4">
-        <a target="_blank">
+        <a target="_blank" :href="data.href">
           <img :src="data.image" class="img-fluid">
         </a>
         <h5>{{ data.singerName }}</h5>
@@ -33,39 +33,48 @@ export default {
       singers: [
         {
           singerName: 'Beyonce',
-          image: require('@/assets/beyonce.jpeg')
+          image: require('@/assets/beyonce.jpeg'),
+          href: 'https://music.apple.com/us/artist/beyonc%C3%A9/1419227?uo=4'
         },
         {
           singerName: 'Cardi B',
-          image: require('@/assets/cardib.jpeg')
+          image: require('@/assets/cardib.jpeg'),
+          href: 'https://music.apple.com/us/artist/cardi-b/956078923?uo=4'
         },
         {
           singerName: 'Ludovico Einaudi',
-          image: require('@/assets/ludovico.jpeg')
+          image: require('@/assets/ludovico.jpeg'),
+          href: 'https://music.apple.com/us/artist/ludovico-einaudi/7420827?uo=4'
         },
         {
           singerName: 'Jacob Banks',
-          image: require('@/assets/jacobbanks.jpeg')
+          image: require('@/assets/jacobbanks.jpeg'),
+          href: 'https://music.apple.com/us/artist/jacob-banks/625014171?uo=4'
         },
         {
           singerName: 'John Legend',
-          image: require('@/assets/johnlegend.jpeg')
+          image: require('@/assets/johnlegend.jpeg'),
+          href: 'https://music.apple.com/us/artist/john-legend/16586443?uo=4'
         },
         {
           singerName: 'Davido',
-          image: require('@/assets/davido.jpeg')
+          image: require('@/assets/davido.jpeg'),
+          href: 'https://music.apple.com/us/artist/davido/254654363?uo=4'
         },
         {
           singerName: 'Simi',
-          image: require('@/assets/simi.jpeg')
+          image: require('@/assets/simi.jpeg'),
+          href: 'https://music.apple.com/us/artist/simi/305148918?uo=4'
         },
         {
           singerName: 'Adekunle Gold',
-          image: require('@/assets/adekunle.jpeg')
+          image: require('@/assets/adekunle.jpeg'),
+          href: 'https://music.apple.com/us/artist/adekunle-gold/1035126760?uo=4'
         },
         {
           singerName: 'Wizkid',
-          image: require('@/assets/wizkid.jpeg')
+          image: require('@/assets/wizkid.jpeg'),
+          href: 'https://music.apple.com/us/artist/wizkid/309335750?uo=4'
         }
       ]
     }
